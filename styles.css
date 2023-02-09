@@ -1,0 +1,66 @@
+body {
+    background-image: url(restaurant.jpeg);
+    width: 100%;
+    font-family: Tahoma, sans-seriff, 'Times New Romans';
+    padding: 20px;
+  }
+  
+  #title {
+    margin: 10px auto;
+    text-align: center;
+    color: #cc9900;
+  }
+  
+  #description {
+    margin: 10px auto;
+    font-size: 18px;
+    text-align: center;
+    width: 600px;
+    color: #ffff00;
+  }
+  
+  #survey-form {
+    font-size: 18px;
+    margin: 10px auto;
+    width: 600px;
+    background-color: #cc6600;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  #name, #email, #number, #dropdown, #dropdown-two, .improve, .disposition, .quality, .meal, #comments {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 5px;
+    width: 100%;
+    
+  }
+  
+  #name, #email, #number, #dropdown, #dropdown-two, #comments {
+    border: #ffffff solid 3px;
+    font-size: 18px;
+  }
+  
+  input[name="fav-meal"], input[name="meal-quality"], input[name="disposition"], input[name="improve"], #comments {
+    width: unset;
+  }
+  
+  #comments {
+    width: 100%;
+  }
+  
+  fieldset {
+    margin: 15px auto;
+    border: none;
+  }
+  
+  button[type="submit"] {
+    color: #ffffff;
+    background-color: blue;
+    font-size: 24px;
+    font-weight: bold;
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 20px;
+  }

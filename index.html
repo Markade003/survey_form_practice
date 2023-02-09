@@ -1,0 +1,89 @@
+<!DOCTYPE html/>
+
+<html lang="en">
+ 
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Workers Meals Feedback Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+ 
+  <body>
+    
+    <h1 id="title">Factory Workers Meals Feedback Form</h1>
+
+    <p id="description"><em>Thank you for choosing us as your meals provider. Kindly complete and submit this form to help us improve our services to you.</em></p>
+
+    <form id="survey-form">
+      <label for="name" id="name-label">Name: <input id="name" type="text" placeholder="Enter your name" required /></label>
+
+      <label for="email" id="email-label">Email: <input id="email" type="email" placeholder="Enter your email address" required /></label>
+
+      <label for="number" id="number-label">Age (optional): <input id="number" type="number" placeholder="Age in numbers only" min="18" max="60" /></label>
+
+      <label for="dropdown" id="dropdown-label">To which work-group do you belong? 
+        <select id="dropdown">
+          <option>Choose one</option>
+          <option>Construction</option>
+          <option>Engineering and Design</option>
+          <option>Guest</option>
+          <option>Maintenance</option>
+          <option>Operation</option>
+          <option>Services</option>
+        </select>
+      </label>
+
+      <label for="role" id="dropdown-role">Which option best describle your current role? 
+        <select id="dropdown-two">
+          <option>Choose one</option>
+          <option>Intern</option>
+          <option>Unskilled Worker</option>
+          <option>Skilled Worker</option>
+          <option>Forman</option>
+          <option>Supervisor</option>
+          <option>Manager</option>
+          <option>Guest</option>
+        </select>
+      </label>
+
+      <fieldset>What is your favourite meal category? 
+        <label class="meal"><input type="checkbox" name="fav-meal" value="african-dishes"> African Dishes</label> 
+        <label class="meal"><input type="checkbox" name="fav-meal" value="chinease-korean"> Chinease and Korean</label> 
+        <label class="meal"><input type="checkbox" name="fav-meal" value="pastries-snacks"> Pastries and Snacks</label> 
+        <label class="meal"><input type="checkbox" name="fav-meal" value="seafood"> Seafood</label> 
+        <label class="meal"><input type="checkbox" name="fav-meal" value="veggies-fruits"> Veggies and Fruits</label>
+
+      </fieldset>
+
+      <fieldset>How would rate the quality of meals offered?
+        <label class="quality"><input type="radio" name="meal-quality" value="excellent"> Excellent</label>
+        <label class="quality"><input type="radio" name="meal-quality" value="satisfactory"> Satisfactory</label>
+        <label class="quality"><input type="radio" name="meal-quality" value="manageable"> Manageable</label>
+        <label class="quality"><input type="radio" name="meal-quality" value="poor">
+      Poor</label>
+      </fieldset>
+
+      <fieldset>How would rate the kitchen attendants disposition?
+        <label class="disposition"><input type="checkbox" name="disposition" value="friendly"> Friendly</label> 
+        <label class="disposition"><input type="checkbox" name="disposition" value="helpful"> Helpful</label> 
+        <label class="disposition"><input type="checkbox" name="disposition" value="impatient"> Impatient</label> 
+        <label class="disposition"><input type="checkbox" name="disposition" value="rude"> Rude</label> 
+        <label class="disposition"><input type="checkbox" name="disposition" value="annoying"> Annoying</label> 
+      </fieldset>
+
+      <fieldset>What would you like to see us improve?
+        <label class="improve"><input type="checkbox" name="improve" value="menu-options"> Menu Options and Varieties</label> 
+        <label class="improve"><input type="checkbox" name="improve" value="workers-attitude"> Workers Attitude</label> 
+        <label class="improve"><input type="checkbox" name="improve" value="dinning-space"> Dinning Space Arrangement</label> 
+        <label class="improve"><input type="checkbox" name="improve" value="lightening"> Lightening and Visuals</label> 
+        <label class="improve"><input type="checkbox" name="improve" value="food-packaging"> Food Packaging</label> 
+        <label class="improve"><input type="checkbox" name="improve" value="disposables-management"> Disposables Management</label>
+      </fieldset>
+
+      <label>Any comments or suggestions? <textarea id="comments" placeholder="Enter your comments here" rows="5" cols="30"></textarea></label>
+
+      <button id= "submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
